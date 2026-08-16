@@ -7,3 +7,5 @@ checkpoint-*/
 *.bin
 cache/
 .DS_Store
+
+.idea/
