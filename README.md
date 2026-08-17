@@ -6,6 +6,22 @@
 
 NCW 是一个中文二次元场景长文生成 LoRA 模型，基于 [Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct) 微调。输入一句中文自然语言描述，输出约 400~1000 字的中文画面描写。
 
+
+## 模型文件（ModelScope）
+
+完整合并权重已上传至 ModelScope 仓库：[bch080/ncw_v0.1](https://modelscope.cn/models/bch080/ncw_v0.1)
+
+```python
+from modelscope import snapshot_download
+model_dir = snapshot_download("bch080/ncw_v0.1")
+```
+
+也可以直接 git 下载：
+
+```bash
+git clone https://www.modelscope.cn/bch080/ncw_v0.1.git
+```
+
 ## 能力
 
 - 中文口语 / 自然语言 → 二次元画面长文
